@@ -47,3 +47,112 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+	--Light-Cyan: hsl(193, 38%, 86%);
+	--Neon-Green: hsl(150, 100%, 66%);
+
+	--Grayish-Blue: hsl(217, 19%, 38%);
+	--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+	--Dark-Blue: hsl(218, 23%, 16%);
+	font-family: 'Outfit', sans-serif;
+	
+}
+
+body{
+	background-color: var(--Dark-Blue);
+}
+
+
+.main-container{
+	position: relative;
+	margin: auto;
+	width: 30rem;
+	height: 18rem;
+	border-radius: 20px;
+	padding:2rem 3rem 2.7rem 3rem;
+	
+	
+	transform: translateY(100%);
+	box-sizing: border-box;
+
+	background-color: var(--Dark-Grayish-Blue);
+
+
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.advice-id{
+	color: var(--Neon-Green);
+	letter-spacing: 3px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.main-text{
+ 	font-size: 28px;
+	color: var(--Light-Cyan);
+	text-align: center;
+}
+
+.image-divider{
+object-fit: contain;
+width: 100%;
+height: auto;
+}
+
+.logo-container{
+	position: absolute;
+	background-color: var(--Neon-Green);
+	border-radius: 100%;
+	padding: 1.1rem;
+	
+	transform: translateY(9rem);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dice-logo{
+	object-fit: contain;
+	width: 1.5rem;
+	height: 1.5rem;
+	
+	background-color: var(--Neon-Green);
+
+}
+
+/*----------------------------------------------*/
+@media only screen and (max-width: 375px) {
+
+	.main-container{
+		position: relative;
+		margin: auto;
+		width: 22rem;
+		height: 18rem;
+		border-radius: 20px;
+		padding:2rem 3rem 2.7rem 3rem;
+		
+		transform: translateY(50%);
+		box-sizing: border-box;
+	
+		background-color: var(--Dark-Grayish-Blue);
+	
+	
+		justify-content: space-around;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.advice-id{
+		color: var(--Neon-Green);
+		letter-spacing: 5px;
+		font-size: 12px;
+	}
+  }
